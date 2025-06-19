@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JeffFlix — Your Streaming Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0c0c0c;
+      color: #fff;
+    }
+
+    header {
+      background: linear-gradient(90deg, #00ffc3, #007cff);
+      padding: 1.5em;
+      text-align: center;
+      font-size: 2em;
+      color: #0c0c0c;
+      font-weight: bold;
+    }
+
+    #search {
+      margin: 1em auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    #search input {
+      width: 60%;
+      padding: 0.8em;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    section {
+      padding: 1em 2em;
+    }
+
+    h2 {
+      color: #00ffc3;
+      margin: 1em 0 0.5em;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 1em;
+      padding-bottom: 1em;
+    }
+
+    .card {
+      flex: 0 0 auto;
+      background-color: #1a1a1a;
+      padding: 0.5em;
+      border-radius: 10px;
+      width: 180px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .card p {
+      margin-top: 0.5em;
+    }
+
+    .watch-btn {
+      margin-top: 0.5em;
+      display: inline-block;
+      background-color: #00ffc3;
+      color: #000;
+      padding: 0.4em 0.8em;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>🎬 JeffFlix — Stream Everything 🎮</header>
+
+  <div id="search">
+    <input type="text" placeholder="Search shows, anime, movies..." />
+  </div>
+
+  <section>
+    <h2>K-Dramas</h2>
+    <div class="carousel">
+      <div class="card">
+        <img src="https://via.placeholder.com/180x250?text=Crash+Landing+on+You" alt="Crash Landing on You">
+        <p>Crash Landing on You</p>
+        <a class="watch-btn" href="https://www.netflix.com/title/81040344" target="_blank">Watch Now</a>
+      </div>
+    </div>
+
+    <h2>Anime</h2>
+    <div class="carousel">
+      <div class="card">
+        <img src="https://via.placeholder.com/180x250?text=Demon+Slayer" alt="Demon Slayer">
+        <p>Demon Slayer</p>
+        <a class="watch-btn" href="https://www.crunchyroll.com/series/GYEXQKJG6" target="_blank">Watch Now</a>
+      </div>
+    </div>
+
+    <h2>Movies</h2>
+    <div class="carousel">
+      <div class="card">
+        <img src="https://via.placeholder.com/180x250?text=Avengers+Endgame" alt="Avengers: Endgame">
+        <p>Avengers: Endgame</p>
+        <a class="watch-btn" href="https://www.disneyplus.com/en-au/movies/avengers-endgame/34nKX7XS0LoF" target="_blank">Watch Now</a>
+      </div>
+    </div>
+
+    <h2>Manga</h2>
+    <div class="carousel">
+      <div class="card">
+        <img src="https://via.placeholder.com/180x250?text=One+Piece" alt="One Piece">
+        <p>One Piece</p>
+        <a class="watch-btn" href="https://www.viz.com/shonenjump/chapters/one-piece" target="_blank">Read Now</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
